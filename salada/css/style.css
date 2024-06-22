@@ -50,6 +50,17 @@ header {
     transition: .3s;
 }
 
+/* スマホ対応 */
+@media only screen and(max-width: 768px){
+    header .container{
+        justify-content: center;
+    }
+    .header_menu li {
+        /* marginは上右左下の順 */
+        margin:20px 16px 0;
+    }
+}
+
 /* メイン */
 #hero {
     background-image: url(../images/hero.jpg);
@@ -90,6 +101,18 @@ header {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 30px;
+}
+
+@media only screen and(max-width: 768px){
+    #hero {
+        height: 460px;
+    }
+    .hero_inner p{
+        font-size: 15px;
+    }
+    .hero_inner h1{
+        font-size: 17px;
+    }
 }
 
 /* コンセプト */
