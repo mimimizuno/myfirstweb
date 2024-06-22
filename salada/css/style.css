@@ -156,6 +156,23 @@ header {
     z-index:-1;
 }
 
+@media only screen and(max-width: 768px){
+    #concept h3{
+        font-size:24px;
+        line-height: 1.5;
+    }
+    .column-2 {
+        width: 100%;
+    }
+    .text {
+        line-height: 1.7;
+        font-size: 15px;
+    }
+    .concept-img{
+        margin-top: 30px;
+    }
+}
+
 /* サービス */
 #service{
     margin-bottom: 120px;
@@ -179,6 +196,19 @@ header {
     margin-bottom: 24px;
 }
 
+@media only screen and(max-width: 768px){
+    .column-40{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .column-55{
+        width: 100%;
+    }
+    #service h3{
+        font-size: 17px;
+    }
+}
+
 /* カンパニー */
 #company{
     margin-bottom: 120px;
@@ -197,6 +227,11 @@ header {
     width: 70%;
     padding:48px 0;
     border-bottom: solid 1px #D2ECBA;
+}
+@media only screen and(max-width: 768px){
+    #company dl{
+        font-size: 13px;
+    }
 }
 
 /* ボトム */
@@ -231,6 +266,13 @@ header {
     width:28%;
     height: 270px;
     border-radius: 20px;
+}
+@media only screen and(max-width: 768px){
+    .column-a, .column-b, .column-c, .column-d{
+        width:48%;
+        height: 140px;
+        margin:1%;
+    }
 }
 
 /* フッター */
