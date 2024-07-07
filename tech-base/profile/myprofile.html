@@ -1,0 +1,106 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=320, height=480, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes"><!-- for smartphone. ここは一旦、いじらなくてOKです。 -->
+        <meta charset="utf-8"><!-- 文字コード指定。ここはこのままで。 -->
+        <title>mimimizunoのプロフィール</title>
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+
+    <body>
+
+    <div class ="header">
+        <!-- 見出し 第１レベル -->
+        <!--（氏名）の公開を避ける場合はイニシャルやニックネームでOK-->
+        <h1 id="midashi_1"> mimimizunoのプロフィール </h1>
+
+
+        <!--自分を象徴するような画像を入れてみよう-->
+        <!--画像も同じフォルダにアップロードすること-->
+        <img src="image/profile-img.webp" alt="自分を象徴する写真など" title="プロフィール画像" width="320px" ><br>
+        （画像についてひとこと：楽しいこと大好き！）
+
+        <hr>
+
+        <!-- 見出し 第２レベル ・以下、h2レベルで項目を色々書いていきましょう -->
+        <!-- 自己紹介で言いたい項目を見出しにいれて、文章をつくりましょう。項目名は編集OK。項目を足してもOK。 -->
+        <h2>所属</h2>
+        大学院理系1年生です。研究は回路のシミュレーションをやっています。<br>
+        バイトは飲食店をやってます。<br>
+
+
+        <h2>趣味や属性</h2>
+        趣味はコーヒー、アニメ、映画、お笑い、音楽を聴くこと、などなどたくさんです！<br>
+        話すの大好きです。皆さんとコミュニケーションをたくさん取りたいです！！<br>
+
+    </div>
+
+    <div class = "contents">
+        <!-- HTMLで出来る色々な表現を試す -->
+        <!-- ↑文字に意味を持たせることもできます。strong は太字。ググったりして色々と調べてみましょう -->
+        <!-- 例として今回は「リスト表示」を作ってみましょう。項目数が３で足りないなら足してもOKです -->
+        <!-- 番号をふるなら ol タグ、番号がいらないなら ul タグ で囲って、項目は li タグで括ります。 -->
+        <!-- ol ・ ul 片方でOK -->
+        <h2>最近の好きなお笑い芸人トップ３</h2>
+        <strong> 私の好きなお笑い芸人のトップ３です！</strong><br>
+        <!-- ↑文字に意味を持たせることもできます。strong は強調。太字になります。 -->
+        <ol>
+            <div class ="contents-list">
+                <li> 令和ロマン</li>
+                <img class = "content" src="image/comedian1.jpg" alt="令和ロマン">
+            </div>
+            <div class ="contents-list">
+                <li> ダウ90000</li>
+                <img class = "content" src="image/comedian2.jpg" alt="ダウ90000">
+            </div>
+            <div class ="contents-list">
+                <li> 霜降り明星</li>
+                <img class = "content" src="image/comedian3.jpg" alt="霜降り明星">
+            </div>
+        </ol>
+    </div>
+
+
+    <hr>
+
+    <!-- 以下は、見出しの名前は固定で、内容を編集してみましょう -->
+    <div class ="bottom">
+        <h2>その他</h2>
+        <!-- 見出し 第３レベル -->
+        <h3>使用PC</h3><!-- 編集して、自分の使うPCだけ残しましょう -->
+        ノートPC → Windows<br>
+        デスクトップ → Mac
+    
+        <h3>PC利用経験や、普段の使い方</h3>
+        研究やプログラミング学習で毎日いじってます
+    
+        <h3>自分の強みや弱みなど</h3>
+        強み：考えずに行動できて、行動しながら計画を立てていくことができます<br>
+        ストイックに努力できます<br>
+        弱み：いろんなことに手を出しすぎてしまうところです<br>
+    
+    
+        <h3>TECH-BASE参加にあたり、意気込み</h3>
+        初のチーム開発で、すごく楽しみにしています！たくさん成長できるように全力で臨みます！<br>
+    
+    
+    </div>
+    
+    <div class ="footer">
+        <hr>
+        <a href="#midashi_1"> このページのTOPへ </a> ／ <a href="https://www.google.co.jp/" target="_blank"> ググる </a>
+    
+        <hr>
+    
+        <!-- 以下は投稿フォーム欄ですが、今は＆このままでは機能しておらずエラーが発生します。 -->
+        <!-- したがって今はコピペするだけでOKです。スタートアップ以降のPHPミッションを進める際に、参考にしてください。 -->
+        <form method="POST" action="">
+            お名前：<input type="text" name="name"><br>
+            コメント：<input type="text" name="comment"><br>
+            <input type="submit" name="submit" value="送信">
+        </form>
+    </div>
+
+
+    </body>
+</html>
